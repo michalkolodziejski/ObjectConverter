@@ -65,6 +65,11 @@ public final class ObjectConverter {
     }
 
     /**
+     * Utility class should not have public constructor
+     */
+    private ObjectConverter() { throw new UnsupportedOperationException("Inaccessible constructor"); }
+
+    /**
      * Registers provided as anonymous class converter for given type
      * @param type type to convert
      * @param closure anonymous class of interface @see ConvertFunction
@@ -81,7 +86,7 @@ public final class ObjectConverter {
      * @throws NullPointerException If 'to' is null.
      * @throws UnsupportedOperationException If no converter for given type can be found.
      */
-    public static <T> Object convert(Object from, Class<T> to) throws Exception {
+    public static <T> Object convert(Object from, Class<T> to) throws ObjectConversionException {
         if (from == null) {
             return null;
         }

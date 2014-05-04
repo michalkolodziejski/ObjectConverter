@@ -6,6 +6,12 @@ package org.mkdev.converter;
  * @license: GPLv3 (http://www.gnu.org/licenses/gpl-3.0.txt)
  * @since: 2014-05-03
  */
+
+/**
+ * Interface for function (closure) that maps input to output
+ * @param <T> input type
+ * @param <R> output type
+ */
 public interface ConvertFunction<T, R> {
-    public R apply (T value) throws Exception;
+    R apply (T value) throws ObjectConversionException;
 }
