@@ -2,6 +2,7 @@ ObjectConverter
 ===============
 
 ## Build status
+
 [![Build Status](https://buildhive.cloudbees.com/job/michalkolodziejski/job/ObjectConverter/badge/icon)](https://buildhive.cloudbees.com/job/michalkolodziejski/job/ObjectConverter/)
 
 ##Description
